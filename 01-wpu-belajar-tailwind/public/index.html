@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coba Tailwind</title>
+    <!-- Cara CDN -->
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <!-- Cara CLI -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<h1 class="text-5xl font-bold text-blue-400">Hello Suntree</h1>
+<a href="" class="bg-green-500 p-3 text-white inline-block m-3 rounded shadow hover:bg-green-700">Ini Tombol</a>
+<p class="m-3 bg-yellow-200 ">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi eaque reiciendis quod molestiae ad commodi atque nobis voluptas molestias dolore quam optio delectus, tempore necessitatibus voluptatum nisi facilis. Reprehenderit quas porro earum dolorum, cupiditate quia? Reprehenderit asperiores unde harum recusandae ad, sequi explicabo quo sapiente quas quasi fuga? Consequuntur, quidem.</p>
+
+</body>
+</html>
+
+<!-- Cara CLI -->
+<!-- Di terminal jalankan perintah :
+    - npm init -y (untuk menginisialisasi package.json, -y berfungsi mengisikan nilai default) 
+    - npm install -D tailwindcss postcss autoprefixer (menginstall komponen yang dibutuhkan)
+    - npx tailwindcss init (menginisialisasi tailwind.config.js)
+-->
+<!-- Di file tailwind.config.js tentukan lokasi file html, default : './public/**/*.{html,js}'-->
+<!-- Buat input.css yang berisi
+    - @tailwind base;
+    - @tailwind components;
+    - @tailwind utilities;
+-->
+<!-- Di terminal jalankan perintah :
+    - npx tailwindcss -i ./src/input.css -o ./src/output.css --watch
+    Bisa disimpan di package.json -> script -> dev , jalankan dengan -> npm run dev
+-->
+<!-- Jika development sudah selesai file css bisa diperkecil dengan
+    - npx tailwindcss -o ./public/css/final.css --minify
+-->
